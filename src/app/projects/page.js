@@ -9,8 +9,8 @@ const ProjectsPage = () => {
       description: "A personal portfolio website showcasing my projects, skills, and experience.",
       image: "/project1.png",
       technologies: ["Next.js", "PayloadCMS", "Vercel", "Supabase"],
-      liveUrl: "https://webp-sigma.vercel.app/",
-      github: "https://github.com/fazafazli/wp",
+      liveUrl: "https://portfolio-kappa-lilac-67.vercel.app/",
+      github: "https://github.com/fazafazli/portfolio",
     },
   ];
 

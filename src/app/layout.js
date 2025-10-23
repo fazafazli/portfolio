@@ -15,24 +15,24 @@ export const metadata = {
     default: 'fazafazli - website portfolio',
     template: '%s | fazafazli'
   },
-  description: 'Professional portfolio showcasing modern web development projects, skills, and experience in React, Next.js, and full-stack development.',
+  description: 'Portfolio showcasing modern web development projects, skills, and experience in Next.js.',
   keywords: 'web developer, full stack developer, react, next.js, portfolio, javascript, typescript',
   authors: [{ name: 'fazafazli' }],
   creator: 'fazafazli',
   openGraph: {
     title: 'fazafazli - website portfolio',
     description: 'First website portfolio',
-    url: 'https://yourportfolio.com',
+    url: 'https://portfolio-kappa-lilac-67.vercel.app/',
     siteName: 'fazafazli Portfolio',
     images: [
       {
-        url: '/og-image.jpg', // Create this image later
+        url: '/project1.png',
         width: 1200,
         height: 630,
         alt: 'fazafazli Portfolio',
       },
     ],
-    locale: 'en_US',
+    locale: 'Indonesian',
     type: 'website',
   },
   robots: {
