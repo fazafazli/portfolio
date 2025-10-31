@@ -32,13 +32,13 @@ export default function ContactPage() {
 
       setStatus({ 
         type: 'success', 
-        message: 'Message sent successfully! I\'ll get back to you soon.' 
+        message: 'Message sent successfully! I.' 
       });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       setStatus({ 
         type: 'error', 
-        message: 'Something went wrong. Please try again or email me directly.' 
+        message: 'Oopsie.. something went wrong. Please try again or email me directly.' 
       });
       console.error('Error:', error);
     } finally {
@@ -78,7 +78,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen pt-16 bg-gray-50">
-      {/* Header Section */}
+      {/* header */}
       <section className="bg-gradient-to-br from-indigo-50 to-purple-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -94,10 +94,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* main content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-3 gap-12">
-          {/* Contact Information */}
+          {/* contact */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -160,7 +160,7 @@ export default function ContactPage() {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
+          {/* contact form */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -188,7 +188,7 @@ export default function ContactPage() {
                   />
                 </div>
 
-                {/* Email Field */}
+                {/* email field */}
                 <div>
                   <label className="flex items-center gap-2 text-gray-700 font-medium mb-2">
                     <Mail size={20} />
@@ -205,7 +205,7 @@ export default function ContactPage() {
                   />
                 </div>
 
-                {/* Message Field */}
+                {/* message field */}
                 <div>
                   <label className="flex items-center gap-2 text-gray-700 font-medium mb-2">
                     <MessageSquare size={20} />
@@ -225,7 +225,7 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                {/* Status Message */}
+                {/* status message */}
                 {status.message && (
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
@@ -240,7 +240,7 @@ export default function ContactPage() {
                   </motion.div>
                 )}
 
-                {/* Submit Button */}
+                {/* submit button */}
                 <button
                   type="submit"
                   disabled={isSubmitting}
