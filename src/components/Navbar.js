@@ -38,7 +38,7 @@ export default function Navbar() {
             <span className="hidden sm:block">Portfolio</span>
           </Link>
 
-          {/* Desktop Menu */}
+          {/* Desktop */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Link
@@ -55,7 +55,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile */}
           <button
             className="md:hidden p-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-all duration-300 hover-lift"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -65,7 +65,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200 bg-white/95 backdrop-blur-sm">
             {navLinks.map((link) => (
